@@ -1,6 +1,6 @@
 import { NavLink } from "react-router-dom";
 import styled from "styled-components";
-import { GRAY_100, GRAY_350, GRAY_400, GRAY_50 } from "../constants/colors";
+import { GRAY_100, GRAY_350, GRAY_50 } from "../constants/colors";
 
 export const Header = () => {
   return (
@@ -12,8 +12,8 @@ export const Header = () => {
         </LeftBar>
         <Nav>
           <NavLink to="/">홈</NavLink>
+          <NavLink to="/post">꼬막글</NavLink>
           <NavLink to="/chat">채팅</NavLink>
-          <NavLink to="/post">글 작성</NavLink>
           <NavLink to="/mypage">마이페이지</NavLink>
         </Nav>
       </Container>
