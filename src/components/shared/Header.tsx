@@ -1,13 +1,13 @@
 import { NavLink } from "react-router-dom";
 import styled from "styled-components";
-import { GRAY_100, GRAY_350, GRAY_50 } from "../constants/colors";
+import { Colors } from "../../constants/colors";
 
 export const Header = () => {
   return (
     <Box>
       <Container>
         <LeftBar>
-          <Logo src="../assets/logos/header.png" />
+          <Logo src="../assets/logos/header.svg" />
           <SearchBar type="text" placeholder="☀︎ 햇살 좋은 날에 입을 옷이 있을까?" />
         </LeftBar>
         <Nav>
@@ -31,7 +31,7 @@ const Box = styled.header`
   justify-content: center;
 
   backdrop-filter: blur(5px);
-  border-bottom: 1px solid ${GRAY_100};
+  border-bottom: 1px solid ${Colors.GRAY_100};
 `;
 
 const Container = styled.div`
@@ -52,21 +52,23 @@ const SearchBar = styled.input`
   width: 80%;
   outline: none;
   border: none;
-  background-color: ${GRAY_50};
+  background-color: ${Colors.GRAY_50};
   padding: 10px;
 `;
 
 const Nav = styled.nav`
   display: flex;
   width: 25%;
+  font-size: 16px;
+  font-weight: 200;
   justify-content: space-between;
   .active {
-    font-weight: bolder;
+    font-weight: 700;
     color: #4378ff;
   }
   a {
     display: inline-block;
-    color: ${GRAY_350};
+    color: ${Colors.GRAY_350};
     font-weight: 400;
     text-decoration: none;
     text-transform: uppercase;
