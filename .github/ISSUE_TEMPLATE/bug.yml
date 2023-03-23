@@ -19,4 +19,4 @@ body:
   - type: textarea
     attributes:
       label: ✅ WORKAROUND
-      description: - [ ] props drilling 해결
+      description: props drilling 해결
